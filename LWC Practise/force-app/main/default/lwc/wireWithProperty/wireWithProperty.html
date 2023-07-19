@@ -1,0 +1,14 @@
+<template>
+    <div class="slds-var-a-around_large">
+          <lightning-card>
+            <template if:true={accounts}>
+                <template for:each={accounts} for:item="{acc}">
+                    <a href="#" key="{acc.Id}"></a>
+                </template>
+                <lightning-layout>
+                    <p>acc.name</p>
+                </lightning-layout>
+            </template>
+          </lightning-card>
+    </div>
+</template>

@@ -1,0 +1,9 @@
+<template>
+    <lightning-button label="count++" onclick={handleChange}></lightning-button>
+    <template if:true={mydata}>
+         name:{mydata.Name}
+          phone:{mydata.phone}
+    </template>
+    timestamp:{timeStamp}
+  
+</template>
